@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Left</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>Occasions</h1>
+            <div class="occ__container">
+                <button class="highlight" id="advent" onclick="advent()">advent</button>
+                <button id="christmas" onclick="christmas()">Christmas</button>
+                <button id="epiphany" onclick="epiphany()">epiphany</button>
+                <button id="lent" onclick="lent()">lent</button>
+                <button id="holyweek" onclick="holyweek()">holy week</button>
+                <button id="ascension" onclick="ascension()">Ascension</button>
+                <button id="pentecost" onclick="pentecost()">pentecost</button>
+                <button id="harvest" onclick="harvest()">harvest</button>
+                <button id="saint" onclick="saint()">saints' days</button>
+            </div>
+        </div>
+        <div class="time__container">
+            <div class="time">
+                <span id="Days"></span>
+                <h2>Days</h2>
+            </div>
+            <div class="time">
+                <span id="Hours"></span>
+                <h2>Hours</h2>
+            </div>
+            <div class="time">
+                <span id="Mins"></span>
+                <h2>Mins</h2>
+            </div>
+            <div class="time">
+                <span id="Sec"></span>
+                <h2>Sec</h2>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
