@@ -7,15 +7,13 @@
     font-family: 'josefin sans', sans-serif;
     color: white ;
 }
-body {
+.container{
+    height: 100vh;
+    width: 100%;
     background-image: url(./Resources/Cross.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-}
-.container{
-    height: 100vh;
 }
 
 .occ__container{
@@ -58,8 +56,8 @@ body {
     justify-content: start;
 }
 
-#date{
-    /* width: 500px; */
+/* #date{
+    /* width: 500px; 
     margin-top: 2rem;
     height: 30px;
     border-radius: 10px;
@@ -68,7 +66,7 @@ body {
     text-align: center;
     font-size: 30px;
     padding-left: 5px;
-}
+} */
 
 
 
@@ -90,4 +88,44 @@ body {
 
 .time span {
     font-size: 4rem;
+}
+
+@media screen and (max-width:600px){
+    .container{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;    
+        flex-wrap: wrap;    
+        height: 100vh;
+        width: 100%;
+        background-position: 75% 25%;
+    }
+    .container h1{
+        font-size: 70px;
+    }
+    .occ__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 7rem;
+        flex-wrap: wrap;
+        font-size: 12px;
+        width: 100%;
+    }
+    .occ__container button{
+        font-size: 20px;
+        margin: 5px 3px;
+    }
+    .time__container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+    .time span{
+        font-size: 2rem;
+    }
 }
